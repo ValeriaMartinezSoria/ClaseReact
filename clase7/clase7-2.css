@@ -1,0 +1,12 @@
+body {
+    background-color: #ef0808;
+
+}
+.contenedor {
+    background-color: rgb(104, 193, 97);
+    display: inline-block;
+    margin-block: 8px;
+    padding: 30px;
+    border: 8px solid rgb(230, 247, 38);
+    width: 50%;
+}   
