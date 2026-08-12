@@ -1,0 +1,13 @@
+table,
+td {
+  border: solid gray;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  color:transparent;
+}
+td:hover {
+  color: black;
+ 
+}
