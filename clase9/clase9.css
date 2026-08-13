@@ -47,3 +47,17 @@
     left: 5rem;
     top: 3rem;
 }
+
+.tarjeta {
+    width: 16rem;
+    padding: 1rem;
+    background-color: #abdff7;
+    border: 2px solid black;
+}
+
+.etiqueta {
+    background-color: orange;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
