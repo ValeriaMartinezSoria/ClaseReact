@@ -24,4 +24,10 @@
     background-color: #60b6ce;
     height: 2rem;
     font-size: 1.5rem;
+    transition: background-color 2s, padding-left 0.5rem;
+}
+
+.corredor:hover {
+    background-color: #54c85e;
+    padding-left: 1rem;
 }
