@@ -1,0 +1,27 @@
+.memoria td {
+  border: 2px solid black;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: transparent;
+  background-color: #54c85e;
+  border-radius: 0.5rem;    
+}
+.memoria td:hover {
+  color: black;
+}
+
+.pista {
+  width: 25rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+.corredor {
+    border-bottom: 1px dashed black;
+    padding: 0.5rem;
+    background-color: #60b6ce;
+    height: 2rem;
+    font-size: 1.5rem;
+}
