@@ -31,3 +31,19 @@
     background-color: #54c85e;
     padding-left: 1rem;
 }
+.normal{
+    width: 25rem;
+    padding: 0.5rem;
+    background-color: #8ae4a8;
+    border: 2px solid black;
+    position: static;
+}
+
+.referencia{
+    border:2px solid black;
+    padding: 0.5rem;
+    background-color: #cee7d6;
+    position: relative;
+    left: 5rem;
+    top: 3rem;
+}
