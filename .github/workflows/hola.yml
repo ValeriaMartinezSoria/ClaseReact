@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  hola:
-   run-on: ubuntu-latest
-   steps:
-       name: Saludar
-       run: echo "Hola Mundo"
-       
+    hola:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Saludar
+          run: echo "Hola Mundo"
+          
