@@ -12,4 +12,6 @@ jobs:
       steps:
         - name: Saludar
           run: echo "Hola Mundo"
+        - name: Descargar Codigo
+          uses: actions/checkout@v4
           
