@@ -14,4 +14,8 @@ jobs:
           run: echo "Hola Mundo"
         - name: Descargar Codigo
           uses: actions/checkout@v4
+        - name: En que carpeta estoy
+          run: pwd
+        - name : Listar Archivos
+          run: ls -la 
           
