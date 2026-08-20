@@ -1,3 +1,3 @@
-function mifunction (parametro){
+window.mifunction = function (parametro){
     console.log("holaaaa" + "" + parametro);
 }
