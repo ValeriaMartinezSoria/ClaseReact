@@ -1,34 +1,39 @@
-name : Hola mundo
+name: Holiii jijiji
 
 on:
-    workflow_dispatch:
-    push:
-        branches:
-            - main
+  push:
+  workflow_dispatch:
 
 jobs:
-    hola:
-        runs-on: ubuntu-latest
-        steps: 
-            - name: saludar
-              run: echo "Hola mundo!"
-            - name: descargar codigo
-              uses: actions/checkout@v3
-            - name: En que carpeta estoy?
-              run: pwd
-            - name: listar archivos
-              run: ls -la
-            - name: instalar node
-              uses: actions/setup-node@v3
+  hola:
+    runs-on: ubuntu-latest
 
-            -  name: node version
-               run: node --version
+    steps:
+      - name: Saludar
+        run: echo "hola mundo"
 
-            - name: verify npm
-              run: npm --version
+      - name: Descargar código
+        uses: actions/checkout@v4
 
-            - name: start project with package json
-              run: npm init -y
+      - name: En qué carpeta estoy
+        run: pwd
 
-            - name: install eslint
-              run: npm install --save-dev eslint@eslint/js globals
+      - name: Listado de archivos
+        run: ls -la
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Verificar Node
+        run: node --version
+
+      - name: Verificar npm
+        run: npm --version
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Ejecutar ESLint
+        run: npm run check:js
