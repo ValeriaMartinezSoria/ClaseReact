@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#tablero {
+    margin: 20px auto;
+    background-color: #9bd3a8;
+}
+
+td {
+    padding: 4px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: #9bd3a8;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b9e5c1;
+}

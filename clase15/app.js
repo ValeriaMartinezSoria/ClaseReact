@@ -1,0 +1,10 @@
+"use strict";
+let intentos = 3;
+let mensajes = "Hola, mundo!";
+let activo = true;
+console.log(intentos);
+console.log(mensajes);
+console.log(activo);
+const numerito = 5;
+console.log(numerito == '5');
+console.log(numerito === '5');
