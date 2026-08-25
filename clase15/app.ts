@@ -9,6 +9,6 @@ console.log(activo);
 
 
 const numerito: number = 5;
-console.log(numerito == '5');
-console.log(numerito === '5');
+console.log(numerito.toString() == '5');
+console.log(numerito.toString() === '5');
 
