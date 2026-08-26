@@ -35,5 +35,5 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
-      - name: Ejecutar ESLint
-        run: npm run check:js
+      - name: Verificar TypeScript
+        run: npx tsc --noEmit clase16/buscaminas.ts
