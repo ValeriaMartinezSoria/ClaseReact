@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+    
     paths:
       - 'clase18/contador/**'
       - '.github/workflows/publicar-app.yml'
@@ -42,11 +43,14 @@ jobs:
       - name: Generar carpeta dist
         run: npm run build
 
-      - name: Subir artefacto para publicar
+      - name: Subir dist
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./clase18/contador/dist
 
+      - name: Publicar
+        uses: actions/deploy-pages@v4
+   
   deploy:
     needs: build
     runs-on: ubuntu-latest

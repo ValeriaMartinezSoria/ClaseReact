@@ -22,5 +22,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src", "../contador/src/ejemploLlave.tsx", "../contador/src/tres-en-raya.jsx"]
 }
