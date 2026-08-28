@@ -18,10 +18,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./clase18/contador
-
     steps:
       - name: Descargar codigo
         uses: actions/checkout@v4
@@ -30,11 +26,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+          cache-dependency-path: clase18/contador/package-lock.json
 
       - name: Instalar dependencias
-        run: npm install
+        working-directory: ./clase18/contador
+        run: npm ci
 
       - name: Construir proyecto con Vite
+        working-directory: ./clase18/contador
         run: npm run build
 
       - name: Configurar GitHub Pages
